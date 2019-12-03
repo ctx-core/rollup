@@ -2,3 +2,4 @@
 tsconfig.tsbuildinfo
 lib.js
 script.js
+node_modules

@@ -41,7 +41,7 @@
 	},
 	"devDependencies": {
 		"chokidar": "^3.3.0",
-		"nodemon": "^2.0.1",
+		"nodemon": "^2.0.2",
 		"typescript": "^3.7.3"
 	},
 	"gitHead": "ecded533c5d9946e2d9dafa39dbc95ce3e38ad93"

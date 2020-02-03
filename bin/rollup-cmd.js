@@ -19,7 +19,7 @@ function _rollup__cmd() {
 		alias: { c: 'config', h: 'help', t: 'target', w: 'watch' }
 	})
 	const { help } = argv
-	if (help) return help__msg()
+	if (help) return _help_msg()
 	const suffix = (argv['--'] || []).join(' ')
 	const config_file =
 		argv.config
@@ -95,7 +95,7 @@ function _rollup__cmd() {
 		return code__watch
 	}
 }
-function help__msg() {
+function _help_msg() {
 	return `
 Usage: rollup-cmd.js [-c <config-file>] [-t <target>]
 

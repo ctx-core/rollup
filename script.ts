@@ -1,9 +1,9 @@
 import { _h__param } from '@ctx-core/cli-args'
-const fs = require('fs')
+import fs from 'fs'
 import { promisify } from 'util'
 import { dirname } from 'path'
 const exists = promisify(fs.exists)
-const globby = require('globby')
+import globby from 'globby'
 import { _queue } from '@ctx-core/queue'
 import { _a1__piped } from '@ctx-core/pipe'
 const exec = promisify(require('child_process').exec)
@@ -133,7 +133,8 @@ async function run(path__package_json, script) {
 }
 async function watch(dir) {
 	const a1__dir = await globby(_a1__pattern(dir), { gitignore: true })
-	const watcher = require('chokidar').watch(a1__dir)
+	const chokidar = await import('chokidar')
+	const watcher = chokidar.watch(a1__dir)
 	watcher.on(
 		'change',
 		async path=>

@@ -9,11 +9,11 @@
  * rollup-cmd.js -t browser
  * # browser build file list
  */
-const fs = require('fs')
+import fs from 'fs'
+import minimist from 'minimist'
 console.info(_rollup__cmd())
 module.exports = _rollup__cmd
 function _rollup__cmd() {
-	const minimist = require('minimist')
 	const argv = minimist(process.argv.slice(2), {
 		'--': true,
 		alias: { c: 'config', h: 'help', t: 'target', w: 'watch' }

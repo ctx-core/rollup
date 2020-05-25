@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "8.2.46",
+	"version": "8.2.47",
 	"description": "ctx-core rollup",
 	"type": "module",
 	"main": "lib.js",
@@ -30,11 +30,11 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^15.5.18",
-		"@ctx-core/cli-args": "^3.1.49",
-		"@ctx-core/logger": "^3.1.15",
-		"@ctx-core/pipe": "^1.2.8",
-		"@ctx-core/queue": "^1.2.19",
+		"@ctx-core/array": "^15.5.19",
+		"@ctx-core/cli-args": "^3.1.50",
+		"@ctx-core/logger": "^3.1.16",
+		"@ctx-core/pipe": "^1.2.9",
+		"@ctx-core/queue": "^1.2.20",
 		"globby": "^11.0.0",
 		"minimist": "^1.2.5"
 	},

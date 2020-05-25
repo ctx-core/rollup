@@ -2,6 +2,7 @@
 	"name": "@ctx-core/rollup",
 	"version": "8.2.45",
 	"description": "ctx-core rollup",
+	"type": "module",
 	"main": "lib.js",
 	"module": "lib.js",
 	"types": "lib.ts",

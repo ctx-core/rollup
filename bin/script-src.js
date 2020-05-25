@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-import { cli } from '../script'
+require = require('esm')(module)
+const { cli } = require('../script')
 cli()

@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-import fs from 'fs'
-import { promisify } from 'util'
-import { dirname } from 'path'
+require = require('esm')(module)
+const fs = require('fs')
+const { promisify } = require('util')
+const { dirname } = require('path')
+const { cli } = require('../script')
 const exists = promisify(fs.exists)
-import { cli } from '../script'
 cli({
 	_path__package_json,
 })

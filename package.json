@@ -2,7 +2,6 @@
 	"name": "@ctx-core/rollup",
 	"version": "8.2.48",
 	"description": "ctx-core rollup",
-	"type": "module",
 	"main": "lib.js",
 	"module": "lib.js",
 	"types": "lib.ts",
@@ -35,6 +34,7 @@
 		"@ctx-core/logger": "^3.1.16",
 		"@ctx-core/pipe": "^1.2.9",
 		"@ctx-core/queue": "^1.2.20",
+		"esm": "^3.2.25",
 		"globby": "^11.0.0",
 		"minimist": "^1.2.5"
 	},

@@ -9,8 +9,8 @@
  * rollup-cmd.js -t browser
  * # browser build file list
  */
-import fs from 'fs'
-import minimist from 'minimist'
+const fs = require('fs')
+const minimist = require('minimist')
 console.info(_rollup__cmd())
 module.exports = _rollup__cmd
 function _rollup__cmd() {

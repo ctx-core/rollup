@@ -35,7 +35,6 @@
 		"@ctx-core/logger": "^3.1.14",
 		"@ctx-core/pipe": "^1.2.7",
 		"@ctx-core/queue": "^1.2.18",
-		"esm": "^3.2.25",
 		"globby": "^11.0.0",
 		"minimist": "^1.2.5"
 	},

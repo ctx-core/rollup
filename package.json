@@ -35,13 +35,13 @@
 		"@ctx-core/pipe": "^1.2.10",
 		"@ctx-core/queue": "^1.2.21",
 		"esm": "^3.2.25",
-		"globby": "^11.0.0",
+		"globby": "^11.0.1",
 		"minimist": "^1.2.5"
 	},
 	"devDependencies": {
 		"chokidar": "^3.4.0",
 		"nodemon": "^2.0.4",
-		"typescript": "^3.9.3"
+		"typescript": "^3.9.5"
 	},
 	"gitHead": "23f01e56a4b2f7ac6991cf5f1e148d94895e17f0"
 }

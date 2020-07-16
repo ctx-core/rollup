@@ -39,7 +39,7 @@
 		"minimist": "^1.2.5"
 	},
 	"devDependencies": {
-		"chokidar": "^3.4.0",
+		"chokidar": "^3.4.1",
 		"nodemon": "^2.0.4",
 		"typescript": "^3.9.6"
 	},

@@ -1,4 +1,4 @@
-import { _h__param } from '@ctx-core/cli-args'
+import { _param_h } from '@ctx-core/cli-args'
 import fs from 'fs'
 import { promisify } from 'util'
 import { dirname } from 'path'
@@ -26,7 +26,7 @@ export async function cli() {
 		clean: clean_param,
 		parallel: parallel_param,
 		watch: watch_param,
-	} = _h__param(process.argv.slice(2), {
+	} = _param_h(process.argv.slice(2), {
 		help: '-h, --help',
 		dir: '-d, --dir',
 		build: '-b, --build',

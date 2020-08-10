@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "8.2.74",
+	"version": "8.2.75",
 	"description": "ctx-core rollup",
 	"main": "./index.js",
 	"module": "./index.js",

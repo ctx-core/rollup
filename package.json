@@ -1,6 +1,6 @@
 {
   "name": "@ctx-core/rollup",
-  "version": "8.2.88",
+  "version": "8.2.89",
   "description": "ctx-core rollup",
   "keywords": [
     "ctx-core",
@@ -22,7 +22,7 @@
   "scripts": {
     "build": "npm run clean && npm run compile",
     "clean": "rm -f tsconfig.tsbuildinfo",
-    "compile": "tsc -b",
+    "compile": "./node_modules/.bin/tsc -b",
     "exec": "$@",
     "prepublishOnly": "npm run compile"
   },

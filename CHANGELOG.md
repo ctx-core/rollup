@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 9.0.0
+
+### Major Changes
+
+- Typescript strict checking
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@19.0.0
+  - @ctx-core/cli-args@6.0.0
+  - @ctx-core/pipe@2.0.0
+  - @ctx-core/queue@2.0.0
+
 ## 8.2.89
 
 ### Patch Changes

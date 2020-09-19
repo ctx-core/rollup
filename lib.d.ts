@@ -1,1 +1,1 @@
-export declare function _external(pkg: any): any[];
+export declare function _external(pkg: any): string[];

@@ -1,5 +1,14 @@
 # @ctx-core/rollup
 
+## 9.0.3
+
+### Patch Changes
+
+- fix: install issues: using explicit workspace: versioning
+- Updated dependencies [undefined]
+  - @ctx-core/array@19.0.2
+  - @ctx-core/cli-args@6.0.2
+
 ## 9.0.2
 
 ### Patch Changes

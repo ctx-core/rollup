@@ -1,47 +1,46 @@
 {
-  "name": "@ctx-core/rollup",
-  "version": "9.0.1",
-  "description": "ctx-core rollup",
-  "keywords": [
-    "ctx-core",
-    "rollup"
-  ],
-  "homepage": "https://github.com/ctx-core/rollup#readme",
-  "bugs": {
-    "url": "https://github.com/ctx-core/rollup/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ctx-core/rollup/issues"
-  },
-  "license": "Apache-2.0",
-  "author": "Brian Takita",
-  "main": "./index.js",
-  "module": "./index.js",
-  "types": "./index.ts",
-  "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -f tsconfig.tsbuildinfo",
-    "compile": "./node_modules/.bin/tsc -b",
-    "exec": "$@",
-    "prepublishOnly": "npm run compile"
-  },
-  "dependencies": {
-    "@ctx-core/array": "workspace:*",
-    "@ctx-core/cli-args": "workspace:*",
-    "@ctx-core/pipe": "workspace:*",
-    "@ctx-core/queue": "workspace:*",
-    "esm": "^3.2.25",
-    "globby": "^11.0.1",
-    "minimist": "^1.2.5"
-  },
-  "devDependencies": {
-    "chokidar": "^3.4.2",
-    "nodemon": "^2.0.4",
-    "typescript": "^4.0.3"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "202949aba6302ae8b6795a4e64d1b2d3fd108638"
+	"name": "@ctx-core/rollup",
+	"version": "9.0.1",
+	"description": "ctx-core rollup",
+	"keywords": [
+		"ctx-core",
+		"rollup"
+	],
+	"homepage": "https://github.com/ctx-core/rollup#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/rollup/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/rollup/issues"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"main": "./index.js",
+	"module": "./index.js",
+	"types": "./index.ts",
+	"scripts": {
+		"build": "npm run clean && npm run compile",
+		"clean": "rm -f tsconfig.tsbuildinfo",
+		"compile": "./node_modules/.bin/tsc -b",
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
+	},
+	"dependencies": {
+		"@ctx-core/array": "workspace:*",
+		"@ctx-core/cli-args": "workspace:*",
+		"@ctx-core/pipe": "workspace:*",
+		"@ctx-core/queue": "workspace:*",
+		"esm": "^3.2.25",
+		"globby": "^11.0.1",
+		"minimist": "^1.2.5"
+	},
+	"devDependencies": {
+		"chokidar": "^3.4.2",
+		"nodemon": "^2.0.4",
+		"typescript": "^4.0.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

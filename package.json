@@ -1,46 +1,46 @@
 {
-	"name": "@ctx-core/rollup",
-	"version": "9.0.3",
-	"description": "ctx-core rollup",
-	"keywords": [
-		"ctx-core",
-		"rollup"
-	],
-	"homepage": "https://github.com/ctx-core/rollup#readme",
-	"bugs": {
-		"url": "https://github.com/ctx-core/rollup/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/rollup/issues"
-	},
-	"license": "Apache-2.0",
-	"author": "Brian Takita",
-	"main": "./index.js",
-	"module": "./index.js",
-	"types": "./index.ts",
-	"scripts": {
-		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo",
-		"compile": "./node_modules/.bin/tsc -b",
-		"exec": "$@",
-		"prepublishOnly": "npm run compile"
-	},
-	"dependencies": {
-		"@ctx-core/array": "workspace:^19.0.2",
-		"@ctx-core/cli-args": "workspace:^6.0.2",
-		"@ctx-core/pipe": "workspace:^2.0.0",
-		"@ctx-core/queue": "workspace:^2.0.1",
-		"esm": "^3.2.25",
-		"globby": "^11.0.1",
-		"minimist": "^1.2.5"
-	},
-	"devDependencies": {
-		"chokidar": "^3.4.2",
-		"nodemon": "^2.0.4",
-		"typescript": "^4.0.3"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@ctx-core/rollup",
+  "version": "9.0.4",
+  "description": "ctx-core rollup",
+  "keywords": [
+    "ctx-core",
+    "rollup"
+  ],
+  "homepage": "https://github.com/ctx-core/rollup#readme",
+  "bugs": {
+    "url": "https://github.com/ctx-core/rollup/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctx-core/rollup/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Brian Takita",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.ts",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -f tsconfig.tsbuildinfo",
+    "compile": "./node_modules/.bin/tsc -b",
+    "exec": "$@",
+    "prepublishOnly": "npm run compile"
+  },
+  "dependencies": {
+    "@ctx-core/array": "workspace:^19.0.3",
+    "@ctx-core/cli-args": "workspace:^6.0.3",
+    "@ctx-core/pipe": "workspace:^2.0.0",
+    "@ctx-core/queue": "workspace:^2.0.1",
+    "esm": "^3.2.25",
+    "globby": "^11.0.1",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "chokidar": "^3.4.2",
+    "nodemon": "^2.0.4",
+    "typescript": "^4.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

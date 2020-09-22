@@ -1,4 +1,4 @@
-import { _param_h } from '@ctx-core/cli-args'
+import { _param_h, param_record_type } from '@ctx-core/cli-args'
 import fs from 'fs'
 import { promisify } from 'util'
 import { dirname } from 'path'
@@ -8,7 +8,7 @@ import { _queue } from '@ctx-core/queue'
 import { _a1__piped } from '@ctx-core/pipe'
 const exec = promisify(require('child_process').exec)
 let piped_a1: string[]
-interface Param {
+interface Param extends param_record_type {
 	help:string
 	dir:string
 	build:string

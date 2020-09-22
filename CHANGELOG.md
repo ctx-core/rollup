@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 9.0.11
+
+### Patch Changes
+
+- fix: cli: typescript build
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@6.1.0
+
 ## 9.0.10
 
 ### Patch Changes

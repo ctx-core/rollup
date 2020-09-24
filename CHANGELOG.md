@@ -1,5 +1,12 @@
 # @ctx-core/rollup
 
+## 9.0.19
+
+### Patch Changes
+
+- @ctx-core/array@19.0.16
+- @ctx-core/cli-args@6.1.8
+
 ## 9.0.18
 
 ### Patch Changes

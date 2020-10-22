@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 9.0.26
+
+### Patch Changes
+
+- nodemon: ^2.0.5 -> ^2.0.6
+
 ## 9.0.25
 
 ### Patch Changes

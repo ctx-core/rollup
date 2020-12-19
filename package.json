@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "9.0.40",
+	"version": "9.0.41",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -27,8 +27,8 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^19.1.9",
-		"@ctx-core/cli-args": "workspace:^6.1.26",
+		"@ctx-core/array": "workspace:^19.1.10",
+		"@ctx-core/cli-args": "workspace:^6.1.27",
 		"@ctx-core/pipe": "workspace:^2.0.4",
 		"@ctx-core/queue": "workspace:^2.1.1",
 		"esm": "^3.2.25",

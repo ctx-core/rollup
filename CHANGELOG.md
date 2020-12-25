@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 9.0.44
+
+### Patch Changes
+
+- - .rush
+- Updated dependencies [undefined]
+  - @ctx-core/array@19.1.13
+  - @ctx-core/cli-args@6.1.30
+  - @ctx-core/pipe@2.0.5
+  - @ctx-core/queue@2.1.2
+
 ## 9.0.43
 
 ### Patch Changes

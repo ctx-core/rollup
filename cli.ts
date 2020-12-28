@@ -1,22 +1,13 @@
-import { _param_h, param_record_type } from '@ctx-core/cli-args'
 import fs from 'fs'
 import { promisify } from 'util'
 import { dirname } from 'path'
+import { _param_h, param_record_type } from '@ctx-core/cli-args'
 const exists = promisify(fs.exists)
 import globby from 'globby'
 import { _queue } from '@ctx-core/queue'
 import { _a1__piped } from '@ctx-core/pipe'
 const exec = promisify(require('child_process').exec)
 let piped_a1: string[]
-interface Param extends param_record_type {
-	help:string
-	dir:string
-	build:string
-	compile:string
-	clean:string
-	parallel:string
-	watch:string
-}
 export async function cli() {
 	const {
 		help,
@@ -34,7 +25,7 @@ export async function cli() {
 		clean: '-l, --clean',
 		parallel: '-p, --parallel',
 		watch: '-w, --watch',
-	}) as Param
+	}) as RollupCliParam
 	if (help) {
 		console.info(_help_msg())
 		process.exit(0)
@@ -73,7 +64,7 @@ Options:
 -w --watch              Watch files
 		`.trim()
 }
-async function _src_a1(dir) {
+async function _src_a1(dir: string) {
 	return globby(_pattern_a1(dir), { gitignore: true })
 }
 async function enueue_fn<I>(fn: (path: string) => Promise<I>, { dir, parallel }) {
@@ -128,7 +119,7 @@ async function run(package_json_path: string, script: string) {
 		if (stderr) console.error(stderr)
 	}
 }
-async function watch(dir) {
+async function watch(dir: string) {
 	const dir_a1 = await globby(_pattern_a1(dir), { gitignore: true })
 	const chokidar = await import('chokidar')
 	const watcher = chokidar.watch(dir_a1)
@@ -137,17 +128,17 @@ async function watch(dir) {
 		async path=>
 			compile(await _package_json_path(path)))
 }
-async function _package_json_path(path) {
-	const path__dirname = dirname(path)
-	if (path === path__dirname) return
+async function _package_json_path(path: string) {
+	const dirname_path = dirname(path)
+	if (path === dirname_path) return
 	const package_json_path = `${path}/package.json`
 	const tsconfig_path = `${path}/tsconfig.json`
 	if (await exists(package_json_path) && await exists(tsconfig_path)) {
 		return package_json_path
 	}
-	return await _package_json_path(path__dirname)
+	return await _package_json_path(dirname_path)
 }
-function _pattern_a1(dir) {
+function _pattern_a1(dir: string) {
 	return [
 		`${dir}/**/*.ts`,
 		`${dir}/**/rollup.config.js`,
@@ -155,4 +146,13 @@ function _pattern_a1(dir) {
 		`${dir}/**/package.json`,
 		`${dir}/**/*.svelte`,
 	]
+}
+export interface RollupCliParam extends param_record_type {
+	help:string
+	dir:string
+	build:string
+	compile:string
+	clean:string
+	parallel:string
+	watch:string
 }

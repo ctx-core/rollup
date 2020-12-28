@@ -1,5 +1,18 @@
 # @ctx-core/rollup
 
+## 9.1.0
+
+### Minor Changes
+
+- \_external,cli: extracted from lib
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/pipe@2.1.0
+
 ## 9.0.44
 
 ### Patch Changes

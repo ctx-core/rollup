@@ -1,2 +1,2 @@
-export * from './lib'
-export * from './script'
+export * from './_external'
+export * from './cli'

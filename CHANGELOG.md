@@ -1,5 +1,12 @@
 # @ctx-core/rollup
 
+## 9.1.9
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/queue@2.1.3
+
 ## 9.1.8
 
 ### Patch Changes

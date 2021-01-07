@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 9.1.10
+
+### Patch Changes
+
+- nodemon: ^2.0.6 -> ^2.0.7
+- chokidar: ^3.4.3 -> ^3.5.0
+- globby: ^11.0.1 -> ^11.0.2
+
 ## 9.1.9
 
 ### Patch Changes

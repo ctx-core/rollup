@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 9.1.15
+
+### Patch Changes
+
+- chokidar: ^3.5.0 -> ^3.5.1
+
 ## 9.1.14
 
 ### Patch Changes

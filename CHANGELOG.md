@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 10.0.0
+
+### Major Changes
+
+- src directory
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.0.0
+  - @ctx-core/cli-args@7.0.0
+  - @ctx-core/pipe@3.0.0
+  - @ctx-core/queue@3.0.0
+
 ## 9.1.18
 
 ### Patch Changes

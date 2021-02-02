@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 10.0.5
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.1.2
+  - @ctx-core/cli-args@7.0.5
+
 ## 10.0.4
 
 ### Patch Changes

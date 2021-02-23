@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 10.0.14
+
+### Patch Changes
+
+- typescript: ^4.1.5 -> ^4.2.2
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.1.11
+  - @ctx-core/cli-args@7.1.2
+  - @ctx-core/pipe@3.0.3
+  - @ctx-core/queue@3.0.3
+
 ## 10.0.13
 
 ### Patch Changes

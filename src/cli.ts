@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { promisify } from 'util'
 import { dirname } from 'path'
-import { _param_h, param_record_type } from '@ctx-core/cli-args'
+import { _param_h, param_record_T } from '@ctx-core/cli-args'
 const exists = promisify(fs.exists)
 import globby from 'globby'
 import { _queue } from '@ctx-core/queue'
@@ -147,7 +147,7 @@ function _pattern_a1(dir: string) {
 		`${dir}/**/*.svelte`,
 	]
 }
-export interface RollupCliParam extends param_record_type {
+export interface RollupCliParam extends param_record_T {
 	help:string
 	dir:string
 	build:string

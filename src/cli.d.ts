@@ -1,6 +1,6 @@
-import { param_record_type } from '@ctx-core/cli-args';
+import { param_record_T } from '@ctx-core/cli-args';
 export declare function cli(): Promise<void>;
-export interface RollupCliParam extends param_record_type {
+export interface RollupCliParam extends param_record_T {
     help: string;
     dir: string;
     build: string;

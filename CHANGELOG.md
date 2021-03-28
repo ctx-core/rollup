@@ -1,5 +1,15 @@
 # @ctx-core/rollup
 
+## 10.0.27
+
+### Patch Changes
+
+- fix: npm run compile: tsc -b .
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.2.1
+  - @ctx-core/cli-args@7.2.11
+  - @ctx-core/queue@3.0.6
+
 ## 10.0.26
 
 ### Patch Changes

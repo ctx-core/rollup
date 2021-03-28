@@ -32,7 +32,7 @@
 		"@ctx-core/pipe": "workspace:^3.0.5",
 		"@ctx-core/queue": "workspace:^3.0.5",
 		"esm": "^3.2.25",
-		"globby": "^11.0.2",
+		"globby": "^11.0.3",
 		"minimist": "^1.2.5"
 	},
 	"devDependencies": {

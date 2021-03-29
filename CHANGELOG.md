@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 10.0.28
+
+### Patch Changes
+
+- fix: npm publish: https://github.com/npm/cli/issues/2834
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.2.2
+  - @ctx-core/cli-args@7.2.12
+  - @ctx-core/pipe@3.0.6
+  - @ctx-core/queue@3.0.7
+
 ## 10.0.27
 
 ### Patch Changes

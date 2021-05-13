@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 10.0.39
+
+### Patch Changes
+
+- update dependencies
+
 ## 10.0.38
 
 ### Patch Changes

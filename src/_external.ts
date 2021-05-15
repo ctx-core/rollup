@@ -1,5 +1,5 @@
 import { reject } from '@ctx-core/array'
-export function _external(pkg) {
+export function _external(pkg:_external_pkg_I) {
 	return reject(
 		Object.keys(pkg.dependencies || {})
 			.concat(Object.keys(pkg.devDependencies || {})),
@@ -13,4 +13,8 @@ export function _external(pkg) {
 			)
 		)
 	)
+}
+export interface _external_pkg_I {
+	dependencies?:Record<string, string>
+	devDependencies?:Record<string, string>
 }

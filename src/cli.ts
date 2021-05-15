@@ -7,7 +7,7 @@ import globby from 'globby'
 import { _queue } from '@ctx-core/queue'
 import { _a1__piped } from '@ctx-core/pipe'
 const exec = promisify(require('child_process').exec)
-let piped_a1: string[]
+let piped_a1:string[]
 export async function cli() {
 	const {
 		help,
@@ -38,16 +38,16 @@ export async function cli() {
 	}
 	piped_a1 = await _a1__piped()
 	if (build_param) {
-		await enueue_fn(script, opts)
+		await enqueue_fn(script, opts)
 	} else if (clean_param) {
-		await enueue_fn(clean, opts)
+		await enqueue_fn(clean, opts)
 	} else if (compile_param) {
-		await enueue_fn(compile, opts)
+		await enqueue_fn(compile, opts)
 	} else if (watch_param) {
-		await enueue_fn(compile, opts)
+		await enqueue_fn(compile, opts)
 		await watch(dir)
 	} else {
-		await enueue_fn(compile, opts)
+		await enqueue_fn(compile, opts)
 	}
 }
 function _help_msg() {
@@ -64,10 +64,10 @@ Options:
 -w --watch              Watch files
 		`.trim()
 }
-async function _src_a1(dir: string) {
+async function _src_a1(dir:string) {
 	return globby(_pattern_a1(dir), { gitignore: true })
 }
-async function enueue_fn<I>(fn: (path: string) => Promise<I>, { dir, parallel }) {
+async function enqueue_fn<I>(fn:(path:string)=>Promise<I>, { dir, parallel }:enueue_fn_params_I) {
 	const package_json_path_a1 = await _package_json_path_a1(dir)
 	if (parallel) {
 		const queue = _queue(parallel)
@@ -91,16 +91,20 @@ async function enueue_fn<I>(fn: (path: string) => Promise<I>, { dir, parallel })
 		return out_a1
 	}
 }
-async function script(package_json_path: string) {
+export interface enueue_fn_params_I {
+	dir:string
+	parallel:number
+}
+async function script(package_json_path:string) {
 	return await run(package_json_path, 'build')
 }
-async function clean(package_json_path: string) {
+async function clean(package_json_path:string) {
 	return await run(package_json_path, 'clean')
 }
-async function compile(package_json_path: string) {
+async function compile(package_json_path?:string) {
 	return await run(package_json_path, 'compile')
 }
-async function _package_json_path_a1(dir: string) {
+async function _package_json_path_a1(dir:string) {
 	const src_a1 = piped_a1 ? piped_a1 : await _src_a1(dir)
 	const set = new Set() as Set<string>
 	await Promise.all(src_a1.map(async src=>{
@@ -111,7 +115,7 @@ async function _package_json_path_a1(dir: string) {
 	}))
 	return Array.from(set) as string[]
 }
-async function run(package_json_path: string, script: string) {
+async function run(package_json_path:string|undefined, script:string) {
 	if (package_json_path && await exists(package_json_path)) {
 		const { stdout, stderr } =
 			await exec(`cd ${dirname(package_json_path)}; npm run ${script} --if-present`)
@@ -119,7 +123,7 @@ async function run(package_json_path: string, script: string) {
 		if (stderr) console.error(stderr)
 	}
 }
-async function watch(dir: string) {
+async function watch(dir:string) {
 	const dir_a1 = await globby(_pattern_a1(dir), { gitignore: true })
 	const chokidar = await import('chokidar')
 	const watcher = chokidar.watch(dir_a1)
@@ -128,7 +132,7 @@ async function watch(dir: string) {
 		async path=>
 			compile(await _package_json_path(path)))
 }
-async function _package_json_path(path: string) {
+async function _package_json_path(path:string):Promise<string|undefined> {
 	const dirname_path = dirname(path)
 	if (path === dirname_path) return
 	const package_json_path = `${path}/package.json`
@@ -138,7 +142,7 @@ async function _package_json_path(path: string) {
 	}
 	return await _package_json_path(dirname_path)
 }
-function _pattern_a1(dir: string) {
+function _pattern_a1(dir:string) {
 	return [
 		`${dir}/**/*.ts`,
 		`${dir}/**/rollup.config.js`,

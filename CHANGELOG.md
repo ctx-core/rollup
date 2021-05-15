@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 10.1.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.3.0
+  - @ctx-core/cli-args@7.3.0
+  - @ctx-core/pipe@3.1.0
+  - @ctx-core/queue@3.1.0
+
 ## 10.0.43
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 10.1.2
+
+### Patch Changes
+
+- .npmignore: + ~
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.3.2
+  - @ctx-core/cli-args@7.3.2
+  - @ctx-core/pipe@3.1.2
+  - @ctx-core/queue@3.1.2
+
 ## 10.1.1
 
 ### Patch Changes

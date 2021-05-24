@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 10.2.0
+
+### Minor Changes
+
+- dist,types directory: addressing typescript build issues
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.4.0
+  - @ctx-core/cli-args@7.4.0
+  - @ctx-core/pipe@3.2.0
+  - @ctx-core/queue@3.2.0
+
 ## 10.1.3
 
 ### Patch Changes

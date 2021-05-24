@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 10.2.1
+
+### Patch Changes
+
+- .gitignore: - \*.js
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.4.1
+  - @ctx-core/cli-args@7.4.1
+  - @ctx-core/pipe@3.2.1
+  - @ctx-core/queue@3.2.1
+
 ## 10.2.0
 
 ### Minor Changes

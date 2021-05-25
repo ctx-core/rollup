@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 10.3.0
+
+### Minor Changes
+
+- fix tsc build directory issues
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@20.5.0
+  - @ctx-core/cli-args@7.5.0
+  - @ctx-core/pipe@3.3.0
+  - @ctx-core/queue@3.3.0
+
 ## 10.2.2
 
 ### Patch Changes

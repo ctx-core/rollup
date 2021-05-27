@@ -1,5 +1,15 @@
 # @ctx-core/rollup
 
+## 10.3.1
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@7.5.1
+  - @ctx-core/pipe@3.3.1
+  - @ctx-core/queue@3.3.1
+
 ## 10.3.0
 
 ### Minor Changes

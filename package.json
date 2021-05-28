@@ -28,7 +28,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/array": "workspace:^20.5.1",
-		"@ctx-core/cli-args": "workspace:^7.5.1",
+		"@ctx-core/cli-args": "workspace:^7.6.0",
 		"@ctx-core/pipe": "workspace:^3.3.1",
 		"@ctx-core/queue": "workspace:^3.3.1",
 		"esm": "^3.2.25",

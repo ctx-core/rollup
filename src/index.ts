@@ -1,2 +1,2 @@
-export * from './_external'
+export * from './external_'
 export * from './cli'

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "11.0.10",
+	"version": "11.0.11",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -21,16 +21,16 @@
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo",
+		"clean": "rm -f tsconfig.tsbuildinfo && rm -f dist/**/*.js && rm -f dist/**/*.d.ts && rm -f dist/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^21.2.5",
-		"@ctx-core/cli-args": "workspace:^8.0.13",
-		"@ctx-core/pipe": "workspace:^4.0.0",
-		"@ctx-core/queue": "workspace:^4.0.0",
+		"@ctx-core/array": "workspace:^21.2.6",
+		"@ctx-core/cli-args": "workspace:^8.0.14",
+		"@ctx-core/pipe": "workspace:^4.0.1",
+		"@ctx-core/queue": "workspace:^4.0.1",
 		"esm": "^3.2.25",
 		"globby": "^11.0.3",
 		"minimist": "^1.2.5"

@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 11.0.11
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+- Updated dependencies [undefined]
+  - @ctx-core/array@21.2.6
+  - @ctx-core/cli-args@8.0.14
+  - @ctx-core/pipe@4.0.1
+  - @ctx-core/queue@4.0.1
+
 ## 11.0.10
 
 ### Patch Changes

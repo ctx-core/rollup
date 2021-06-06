@@ -4,10 +4,10 @@ import { dirname } from 'path'
 import { _param_h, param_record_T } from '@ctx-core/cli-args'
 const exists = promisify(fs.exists)
 import globby from 'globby'
-import { _queue } from '@ctx-core/queue'
-import { _a1__piped } from '@ctx-core/pipe'
+import { queue_ } from '@ctx-core/queue'
+import { piped_a_ } from '@ctx-core/pipe'
 const exec = promisify(require('child_process').exec)
-let piped_a1:string[]
+let piped_a:string[]
 export async function cli() {
 	const {
 		help,
@@ -27,7 +27,7 @@ export async function cli() {
 		watch: '-w, --watch',
 	}) as RollupCliParam
 	if (help) {
-		console.info(_help_msg())
+		console.info(help_msg_())
 		process.exit(0)
 	}
 	const dir = dir_param || process.cwd()
@@ -36,7 +36,7 @@ export async function cli() {
 		dir,
 		parallel,
 	}
-	piped_a1 = await _a1__piped()
+	piped_a = await piped_a_()
 	if (build_param) {
 		await enqueue_fn(script, opts)
 	} else if (clean_param) {
@@ -50,7 +50,7 @@ export async function cli() {
 		await enqueue_fn(compile, opts)
 	}
 }
-function _help_msg() {
+function help_msg_() {
 	return `
 Usage: ${process.argv[0]} [-d] [-b] [-c] [-p <threads>] [-w]
 
@@ -64,13 +64,13 @@ Options:
 -w --watch              Watch files
 		`.trim()
 }
-async function _src_a1(dir:string) {
-	return globby(_pattern_a1(dir), { gitignore: true })
+async function src_a_(dir:string) {
+	return globby(pattern_a_(dir), { gitignore: true })
 }
 async function enqueue_fn<I>(fn:(path:string)=>Promise<I>, { dir, parallel }:enueue_fn_params_I) {
-	const package_json_path_a1 = await _package_json_path_a1(dir)
+	const package_json_path_a1 = await package_json_path_a_(dir)
 	if (parallel) {
-		const queue = _queue(parallel)
+		const queue = queue_(parallel)
 		return Promise.all(
 			package_json_path_a1.map(
 				package_json_path=>
@@ -104,11 +104,11 @@ async function clean(package_json_path:string) {
 async function compile(package_json_path?:string) {
 	return await run(package_json_path, 'compile')
 }
-async function _package_json_path_a1(dir:string) {
-	const src_a1 = piped_a1 ? piped_a1 : await _src_a1(dir)
+async function package_json_path_a_(dir:string) {
+	const src_a1 = piped_a ? piped_a : await src_a_(dir)
 	const set = new Set() as Set<string>
 	await Promise.all(src_a1.map(async src=>{
-		const package_json_path = await _package_json_path(src)
+		const package_json_path = await package_json_path_(src)
 		if (package_json_path) {
 			set.add(package_json_path)
 		}
@@ -124,15 +124,15 @@ async function run(package_json_path:string|undefined, script:string) {
 	}
 }
 async function watch(dir:string) {
-	const dir_a1 = await globby(_pattern_a1(dir), { gitignore: true })
+	const dir_a1 = await globby(pattern_a_(dir), { gitignore: true })
 	const chokidar = await import('chokidar')
 	const watcher = chokidar.watch(dir_a1)
 	watcher.on(
 		'change',
 		async path=>
-			compile(await _package_json_path(path)))
+			compile(await package_json_path_(path)))
 }
-async function _package_json_path(path:string):Promise<string|undefined> {
+async function package_json_path_(path:string):Promise<string|undefined> {
 	const dirname_path = dirname(path)
 	if (path === dirname_path) return
 	const package_json_path = `${path}/package.json`
@@ -140,9 +140,9 @@ async function _package_json_path(path:string):Promise<string|undefined> {
 	if (await exists(package_json_path) && await exists(tsconfig_path)) {
 		return package_json_path
 	}
-	return await _package_json_path(dirname_path)
+	return await package_json_path_(dirname_path)
 }
-function _pattern_a1(dir:string) {
+function pattern_a_(dir:string) {
 	return [
 		`${dir}/**/*.ts`,
 		`${dir}/**/rollup.config.js`,

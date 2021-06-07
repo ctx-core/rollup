@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 11.0.12
+
+### Patch Changes
+
+- version bump: run build
+- Updated dependencies [undefined]
+  - @ctx-core/array@21.2.7
+  - @ctx-core/cli-args@8.0.15
+  - @ctx-core/pipe@4.0.2
+  - @ctx-core/queue@4.0.2
+
 ## 11.0.11
 
 ### Patch Changes

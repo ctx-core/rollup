@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 12.0.0
+
+### Major Changes
+
+- move from dist to src directory
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.0
+  - @ctx-core/cli-args@9.0.0
+  - @ctx-core/pipe@5.0.0
+  - @ctx-core/queue@5.0.0
+
 ## 11.0.17
 
 ### Patch Changes

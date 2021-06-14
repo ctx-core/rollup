@@ -11,9 +11,9 @@
  */
 const fs = require('fs')
 const minimist = require('minimist')
-console.info(_rollup__cmd())
-module.exports = _rollup__cmd
-function _rollup__cmd() {
+console.info(cmd_rollup_())
+module.exports = cmd_rollup_
+function cmd_rollup_() {
 	const argv = minimist(process.argv.slice(2), {
 		'--': true,
 		alias: { c: 'config', h: 'help', t: 'target', w: 'watch' }
@@ -29,19 +29,19 @@ function _rollup__cmd() {
 		target = 'browser',
 		watch
 	} = argv
-	const json__config = fs.readFileSync(config_file, 'utf8')
-	const config = JSON.parse(json__config)
-	const a1__cmd__target__config = config[target] || []
-	const { length } = a1__cmd__target__config
+	const config_json = fs.readFileSync(config_file, 'utf8')
+	const config = JSON.parse(config_json)
+	const config_target_cmd_a = config[target] || []
+	const { length } = config_target_cmd_a
 	const code =
 		watch
-		? _code__watch()
-		: _code__cmds()
+		? watch_code_()
+		: cmds_code_()
 	return code
-	function _code__cmds() {
+	function cmds_code_() {
 		const cmds = []
 		for (let i = 0; i < length; i++) {
-			const cmd__target = a1__cmd__target__config[i]
+			const cmd__target = config_target_cmd_a[i]
 			let cmd = ''
 			if (/^\$/.test(cmd__target)) {
 				cmd += cmd__target.replace(/^\$/, '')
@@ -55,16 +55,16 @@ function _rollup__cmd() {
 		}
 		return cmds.join('\n')
 	}
-	function _code__watch() {
-		const a1__cmd__windows = []
-		const a1__cmd__send_keys = []
+	function watch_code_() {
+		const windows_cmd_a = []
+		const send_keys_cmd_a = []
 		for (let i = 0; i < length; i++) {
-			const cmd__target = a1__cmd__target__config[i]
+			const target_cmd = config_target_cmd_a[i]
 			let cmd = ''
-			if (/^\$/.test(cmd__target)) {
-				cmd += cmd__target.replace(/^\$/, '')
+			if (/^\$/.test(target_cmd)) {
+				cmd += target_cmd.replace(/^\$/, '')
 			} else {
-				cmd += `rollup -c '${cmd__target}'`
+				cmd += `rollup -c '${target_cmd}'`
 			}
 			if (watch) {
 				cmd += ' --watch'
@@ -73,26 +73,26 @@ function _rollup__cmd() {
 				cmd += ` ${suffix}`
 			}
 			if (i) {
-				a1__cmd__windows.push(`tmux split-window`)
+				windows_cmd_a.push(`tmux split-window`)
 			}
-			const cmds__tmux =
+			const tmux_cmds =
 				['[ -f ~/.bashrc ] && . ~/.bashrc || [ -f ~/.bash_profile ] && . ~/.bash_profile',
 					'direnv reload',
 					cmd]
-			for (let j = 0; j < cmds__tmux.length; j++) {
-				const cmd__tmux = cmds__tmux[j]
-				a1__cmd__send_keys.push(
-					`tmux send-keys -t ${target}:window.${i} "${cmd__tmux}" C-m`)
+			for (let j = 0; j < tmux_cmds.length; j++) {
+				const tmux_cmd = tmux_cmds[j]
+				send_keys_cmd_a.push(
+					`tmux send-keys -t ${target}:window.${i} "${tmux_cmd}" C-m`)
 			}
 		}
-		const code__watch = [
+		const watch_code = [
 			`tmux new-session -s ${target} -n window -y 1000 -d`,
-			...a1__cmd__windows,
+			...windows_cmd_a,
 			'tmux select-layout even-vertical',
-			...a1__cmd__send_keys,
+			...send_keys_cmd_a,
 			`tmux attach -t ${target}`
 		].join('\n')
-		return code__watch
+		return watch_code
 	}
 }
 function _help_msg() {

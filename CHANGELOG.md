@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 12.0.1
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.1
+
 ## 12.0.0
 
 ### Major Changes

@@ -27,8 +27,8 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^22.0.1",
-		"@ctx-core/cli-args": "workspace:^9.0.1",
+		"@ctx-core/array": "workspace:^22.0.2",
+		"@ctx-core/cli-args": "workspace:^9.0.2",
 		"@ctx-core/pipe": "workspace:^5.0.0",
 		"@ctx-core/queue": "workspace:^5.0.0",
 		"esm": "^3.2.25",

@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 12.0.2
+
+### Patch Changes
+
+- globby: ^11.0.3 -> ^11.0.4
+
 ## 12.0.1
 
 ### Patch Changes

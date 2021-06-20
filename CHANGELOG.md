@@ -1,5 +1,15 @@
 # @ctx-core/rollup
 
+## 12.0.7
+
+### Patch Changes
+
+- "prepare": "npm run clean && npm run compile"
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.7
+  - @ctx-core/cli-args@9.0.7
+  - @ctx-core/queue@5.0.5
+
 ## 12.0.6
 
 ### Patch Changes

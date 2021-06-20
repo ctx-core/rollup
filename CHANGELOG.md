@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 12.0.8
+
+### Patch Changes
+
+- fix: deploying \*.js files
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.8
+  - @ctx-core/cli-args@9.0.8
+  - @ctx-core/pipe@5.0.4
+  - @ctx-core/queue@5.0.6
+
 ## 12.0.7
 
 ### Patch Changes

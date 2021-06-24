@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 12.0.10
+
+### Patch Changes
+
+- tsconfig.json: "lib": ["dom", "ESNext"]
+- Updated dependencies [undefined]
+  - @ctx-core/array@22.0.11
+  - @ctx-core/cli-args@9.0.11
+  - @ctx-core/pipe@5.0.5
+  - @ctx-core/queue@5.0.8
+
 ## 12.0.9
 
 ### Patch Changes

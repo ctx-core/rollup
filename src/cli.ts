@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { promisify } from 'util'
 import { dirname } from 'path'
-import { _param_h, param_record_T } from '@ctx-core/cli-args'
+import { param_r_, param_record_T } from '@ctx-core/cli-args'
 const exists = promisify(fs.exists)
 import globby from 'globby'
 import { queue_ } from '@ctx-core/queue'
@@ -17,7 +17,7 @@ export async function cli() {
 		clean: clean_param,
 		parallel: parallel_param,
 		watch: watch_param,
-	} = _param_h(process.argv.slice(2), {
+	} = param_r_(process.argv.slice(2), {
 		help: '-h, --help',
 		dir: '-d, --dir',
 		build: '-b, --build',
@@ -38,16 +38,16 @@ export async function cli() {
 	}
 	piped_a = await piped_a_()
 	if (build_param) {
-		await enqueue_fn(script, opts)
+		await enqueue(script, opts)
 	} else if (clean_param) {
-		await enqueue_fn(clean, opts)
+		await enqueue(clean, opts)
 	} else if (compile_param) {
-		await enqueue_fn(compile, opts)
+		await enqueue(compile, opts)
 	} else if (watch_param) {
-		await enqueue_fn(compile, opts)
+		await enqueue(compile, opts)
 		await watch(dir)
 	} else {
-		await enqueue_fn(compile, opts)
+		await enqueue(compile, opts)
 	}
 }
 function help_msg_() {
@@ -67,7 +67,7 @@ Options:
 async function src_a_(dir:string) {
 	return globby(pattern_a_(dir), { gitignore: true })
 }
-async function enqueue_fn<I>(fn:(path:string)=>Promise<I>, { dir, parallel }:enueue_fn_params_I) {
+async function enqueue<I>(fn:(path:string)=>Promise<I>, { dir, parallel }:enueue_fn_params_I) {
 	const package_json_path_a = await package_json_path_a_(dir)
 	if (parallel) {
 		const queue = queue_(parallel)

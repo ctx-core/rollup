@@ -27,7 +27,7 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^22.2.0",
+		"@ctx-core/array": "workspace:^22.3.0",
 		"@ctx-core/cli-args": "workspace:^9.0.29",
 		"@ctx-core/pipe": "workspace:^5.0.7",
 		"@ctx-core/queue": "workspace:^5.0.10",

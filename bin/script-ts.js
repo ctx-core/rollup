@@ -3,7 +3,7 @@ import { promisify } from 'util'
 import { exists } from 'fs'
 const exists_async = promisify(exists)
 import { dirname } from 'path'
-import { cli } from '../dist'
+import { cli } from '../dist/index.js'
 cli({
 	package_json_path_,
 })

@@ -1,2 +1,2 @@
-export * from './external_'
-export * from './cli'
+export * from './external_.js'
+export * from './cli.js'

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.0.1",
+	"version": "13.0.2",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -16,6 +16,7 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
+	"type": "module",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -27,10 +28,10 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.1",
-		"@ctx-core/cli-args": "workspace:^10.0.1",
-		"@ctx-core/pipe": "workspace:^6.0.1",
-		"@ctx-core/queue": "workspace:^6.0.1",
+		"@ctx-core/array": "workspace:^23.0.2",
+		"@ctx-core/cli-args": "workspace:^10.0.2",
+		"@ctx-core/pipe": "workspace:^6.0.2",
+		"@ctx-core/queue": "workspace:^6.0.2",
 		"esm": "^3.2.25",
 		"globby": "^11.0.4",
 		"minimist": "^1.2.5"

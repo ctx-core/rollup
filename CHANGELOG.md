@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 13.0.0
+
+### Major Changes
+
+- "type": "module": module npm type
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.0
+  - @ctx-core/cli-args@10.0.0
+  - @ctx-core/pipe@6.0.0
+  - @ctx-core/queue@6.0.0
+
 ## 12.0.24
 
 ### Patch Changes

@@ -9,8 +9,8 @@
  * rollup-cmd.js -t browser
  * # browser build file list
  */
-const fs = require('fs')
-const minimist = require('minimist')
+import { readFileSync } from 'fs'
+import minimist from 'minimist'
 console.info(cmd_rollup_())
 module.exports = cmd_rollup_
 function cmd_rollup_() {
@@ -19,7 +19,7 @@ function cmd_rollup_() {
 		alias: { c: 'config', h: 'help', t: 'target', w: 'watch' }
 	})
 	const { help } = argv
-	if (help) return _help_msg()
+	if (help) return help_msg_()
 	const suffix = (argv['--'] || []).join(' ')
 	const config_file =
 		argv.config
@@ -29,7 +29,7 @@ function cmd_rollup_() {
 		target = 'browser',
 		watch
 	} = argv
-	const config_json = fs.readFileSync(config_file, 'utf8')
+	const config_json = readFileSync(config_file, 'utf8')
 	const config = JSON.parse(config_json)
 	const config_target_cmd_a = config[target] || []
 	const { length } = config_target_cmd_a
@@ -95,7 +95,7 @@ function cmd_rollup_() {
 		return watch_code
 	}
 }
-function _help_msg() {
+function help_msg_() {
 	return `
 Usage: rollup-cmd.js [-c <config-file>] [-t <target>]
 

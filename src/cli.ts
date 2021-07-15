@@ -1,12 +1,13 @@
-import fs from 'fs'
 import { promisify } from 'util'
+import globby from 'globby'
+import { exists } from 'fs'
+const exists_async = promisify(exists)
+import { exec } from 'child_process'
+const exec_async = promisify(exec)
 import { dirname } from 'path'
 import { param_r_, param_record_T } from '@ctx-core/cli-args'
-const exists = promisify(fs.exists)
-import globby from 'globby'
 import { queue_ } from '@ctx-core/queue'
 import { piped_a_ } from '@ctx-core/pipe'
-const exec = promisify(require('child_process').exec)
 let piped_a:string[]
 export async function cli() {
 	const {
@@ -116,9 +117,9 @@ async function package_json_path_a_(dir:string) {
 	return Array.from(set) as string[]
 }
 async function run(package_json_path:string|undefined, script:string) {
-	if (package_json_path && await exists(package_json_path)) {
+	if (package_json_path && await exists_async(package_json_path)) {
 		const { stdout, stderr } =
-			await exec(`cd ${dirname(package_json_path)}; npm run ${script} --if-present`)
+			await exec_async(`cd ${dirname(package_json_path)}; npm run ${script} --if-present`)
 		if (stdout) console.info(stdout)
 		if (stderr) console.error(stderr)
 	}
@@ -137,7 +138,7 @@ async function package_json_path_(path:string):Promise<string|undefined> {
 	if (path === dirname_path) return
 	const package_json_path = `${path}/package.json`
 	const tsconfig_path = `${path}/tsconfig.json`
-	if (await exists(package_json_path) && await exists(tsconfig_path)) {
+	if (await exists_async(package_json_path) && await exists_async(tsconfig_path)) {
 		return package_json_path
 	}
 	return await package_json_path_(dirname_path)

@@ -30,7 +30,7 @@
 	"dependencies": {
 		"@ctx-core/array": "workspace:^23.0.2",
 		"@ctx-core/cli-args": "workspace:^10.0.2",
-		"@ctx-core/pipe": "workspace:^6.0.2",
+		"@ctx-core/pipe": "workspace:^6.0.3",
 		"@ctx-core/queue": "workspace:^6.0.2",
 		"esm": "^3.2.25",
 		"globby": "^11.0.4",

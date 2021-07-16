@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.0.2",
+	"version": "13.0.3",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -16,22 +16,30 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
-	"type": "module",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"exports": {
+		"require": "./dist/index.js",
+		"import": "./dist/index.mjs"
+	},
+	"bin": {
+		"rollup-cmd": "./bin/rollup-cmd.mjs",
+		"script-ts": "./bin/script-ts.mjs"
+	},
 	"scripts": {
-		"build": "npm run clean && npm run compile",
+		"build": "npm run clean && npm run copy-mjs && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo && rm -f src/**/*.js && rm -f src/**/*.d.ts && rm -f src/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
+		"copy-mjs": "cd dist && echo \"export * from './index.js'\" > index.mjs",
 		"exec": "$@",
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.2",
-		"@ctx-core/cli-args": "workspace:^10.0.2",
-		"@ctx-core/pipe": "workspace:^6.0.3",
-		"@ctx-core/queue": "workspace:^6.0.2",
+		"@ctx-core/array": "workspace:^23.0.3",
+		"@ctx-core/cli-args": "workspace:^10.0.3",
+		"@ctx-core/pipe": "workspace:^6.0.4",
+		"@ctx-core/queue": "workspace:^6.0.3",
 		"esm": "^3.2.25",
 		"globby": "^11.0.4",
 		"minimist": "^1.2.5"

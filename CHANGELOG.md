@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.0.3
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.3
+  - @ctx-core/cli-args@10.0.3
+  - @ctx-core/pipe@6.0.4
+  - @ctx-core/queue@6.0.3
+
 ## 13.0.2
 
 ### Patch Changes

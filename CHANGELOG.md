@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.0.4
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.6
+  - @ctx-core/cli-args@10.0.6
+  - @ctx-core/pipe@6.0.5
+  - @ctx-core/queue@6.0.4
+
 ## 13.0.3
 
 ### Patch Changes

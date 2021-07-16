@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.0.5
+
+### Patch Changes
+
+- fix: index.cjs: module.exports = require('./index.js')
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.7
+  - @ctx-core/cli-args@10.0.7
+  - @ctx-core/pipe@6.0.6
+  - @ctx-core/queue@6.0.5
+
 ## 13.0.4
 
 ### Patch Changes

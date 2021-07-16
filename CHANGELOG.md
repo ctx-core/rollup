@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.0.6
+
+### Patch Changes
+
+- "main": "./dist/index.cjs"
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.8
+  - @ctx-core/cli-args@10.0.8
+  - @ctx-core/pipe@6.0.7
+  - @ctx-core/queue@6.0.6
+
 ## 13.0.5
 
 ### Patch Changes

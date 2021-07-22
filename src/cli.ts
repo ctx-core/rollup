@@ -1,5 +1,5 @@
 import { promisify } from 'util'
-import globby from 'globby'
+import { globby } from 'globby'
 import { exists } from 'fs'
 const exists_async = promisify(exists)
 import { exec } from 'child_process'

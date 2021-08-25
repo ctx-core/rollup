@@ -40,8 +40,8 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.16",
-		"@ctx-core/cli-args": "workspace:^10.0.16",
+		"@ctx-core/array": "workspace:^23.0.17",
+		"@ctx-core/cli-args": "workspace:^10.0.17",
 		"@ctx-core/pipe": "workspace:^6.0.12",
 		"@ctx-core/queue": "workspace:^6.0.11",
 		"esm": "^3.2.25",

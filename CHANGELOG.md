@@ -1,5 +1,17 @@
 # @ctx-core/rollup
 
+## 13.0.19
+
+### Patch Changes
+
+- typescript: ^4.4.3 -> ^4.4.4
+- nodemon: ^2.0.13 -> ^2.0.14
+- Updated dependencies [undefined]
+  - @ctx-core/array@23.0.22
+  - @ctx-core/cli-args@10.0.22
+  - @ctx-core/pipe@6.0.15
+  - @ctx-core/queue@6.0.14
+
 ## 13.0.18
 
 ### Patch Changes

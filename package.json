@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.0.18",
+	"version": "13.0.19",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -40,18 +40,18 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.21",
-		"@ctx-core/cli-args": "workspace:^10.0.21",
-		"@ctx-core/pipe": "workspace:^6.0.14",
-		"@ctx-core/queue": "workspace:^6.0.13",
+		"@ctx-core/array": "workspace:^23.0.22",
+		"@ctx-core/cli-args": "workspace:^10.0.22",
+		"@ctx-core/pipe": "workspace:^6.0.15",
+		"@ctx-core/queue": "workspace:^6.0.14",
 		"esm": "^3.2.25",
 		"globby": "^12.0.2",
 		"minimist": "^1.2.5"
 	},
 	"devDependencies": {
 		"chokidar": "^3.5.2",
-		"nodemon": "^2.0.13",
-		"typescript": "^4.4.3"
+		"nodemon": "^2.0.14",
+		"typescript": "^4.4.4"
 	},
 	"publishConfig": {
 		"access": "public",

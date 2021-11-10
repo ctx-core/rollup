@@ -1,5 +1,23 @@
 # @ctx-core/rollup
 
+## 13.1.0
+
+### Minor Changes
+
+- engines*node* from node*version*
+
+### Patch Changes
+
+- compile using swc
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@23.0.23
+  - @ctx-core/cli-args@11.0.0
+  - @ctx-core/pipe@6.0.16
+  - @ctx-core/queue@6.0.15
+
 ## 13.0.19
 
 ### Patch Changes

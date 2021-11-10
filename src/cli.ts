@@ -5,19 +5,19 @@ const exists_async = promisify(exists)
 import { exec } from 'child_process'
 const exec_async = promisify(exec)
 import { dirname } from 'path'
-import { param_r_, param_record_T } from '@ctx-core/cli-args'
+import { param_r_, param_r_T } from '@ctx-core/cli-args'
 import { queue_ } from '@ctx-core/queue'
 import { piped_a_ } from '@ctx-core/pipe'
 let piped_a:string[]
 export async function cli() {
 	const {
 		help,
-		dir: dir_param,
-		build: build_param,
-		compile: compile_param,
-		clean: clean_param,
-		parallel: parallel_param,
-		watch: watch_param,
+		dir: dir_param_val_a,
+		build: build_param_val_a,
+		compile: compile_param_val_a,
+		clean: clean_param_val_a,
+		parallel: parallel_param_val_a,
+		watch: watch_param_val_a,
 	} = param_r_(process.argv.slice(2), {
 		help: '-h, --help',
 		dir: '-d, --dir',
@@ -31,20 +31,20 @@ export async function cli() {
 		console.info(help_msg_())
 		process.exit(0)
 	}
-	const dir = dir_param || process.cwd()
-	const parallel = parseInt(parallel_param)
+	const dir = dir_param_val_a?.[0] || process.cwd()
+	const parallel = parseInt(parallel_param_val_a[0])
 	const opts = {
 		dir,
 		parallel,
 	}
 	piped_a = await piped_a_()
-	if (build_param) {
+	if (build_param_val_a) {
 		await enqueue(script, opts)
-	} else if (clean_param) {
+	} else if (clean_param_val_a) {
 		await enqueue(clean, opts)
-	} else if (compile_param) {
+	} else if (compile_param_val_a) {
 		await enqueue(compile, opts)
-	} else if (watch_param) {
+	} else if (watch_param_val_a) {
 		await enqueue(compile, opts)
 		await watch(dir)
 	} else {
@@ -152,12 +152,12 @@ function pattern_a_(dir:string) {
 		`${dir}/**/*.svelte`,
 	]
 }
-export interface RollupCliParam extends param_record_T {
-	help:string
-	dir:string
-	build:string
-	compile:string
-	clean:string
-	parallel:string
-	watch:string
+export interface RollupCliParam extends param_r_T {
+	help:string[]
+	dir:string[]
+	build:string[]
+	compile:string[]
+	clean:string[]
+	parallel:string[]
+	watch:string[]
 }

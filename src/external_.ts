@@ -1,5 +1,5 @@
-import { reject } from '@ctx-core/array'
 import { builtinModules } from 'module'
+import { reject } from '@ctx-core/array'
 export function external_(pkg:external__pkg_I) {
 	return reject(
 		Object.keys(pkg.dependencies || {})

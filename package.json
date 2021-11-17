@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.1.1",
+	"version": "13.1.2",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -42,15 +42,17 @@
 		"@ctx-core/array": "workspace:^23.0.24",
 		"@ctx-core/cli-args": "workspace:^11.0.1",
 		"@ctx-core/pipe": "workspace:^6.0.17",
-		"@ctx-core/queue": "workspace:^6.0.16",
+		"@ctx-core/queue": "workspace:^6.1.0",
+		"chokidar": "^3.5.2",
+		"fs-extra": "^10.0.0",
 		"globby": "^12.0.2",
-		"minimist": "^1.2.5"
+		"minimist": "^1.2.5",
+		"nodemon": "^2.0.15"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.51",
 		"@swc/core": "^1.2.108",
-		"chokidar": "^3.5.2",
-		"nodemon": "^2.0.15",
+		"@types/fs-extra": "^9.0.12",
 		"typescript": "^4.4.4"
 	},
 	"publishConfig": {

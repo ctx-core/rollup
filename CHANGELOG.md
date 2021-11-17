@@ -1,5 +1,14 @@
 # @ctx-core/rollup
 
+## 13.1.2
+
+### Patch Changes
+
+- @ctx-core/args instead of minimist
+- fs-extra pathExists instead of fs exists
+- Updated dependencies
+  - @ctx-core/queue@6.1.0
+
 ## 13.1.1
 
 ### Patch Changes

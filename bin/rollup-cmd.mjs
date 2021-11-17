@@ -10,25 +10,25 @@
  * # browser build file list
  */
 import { readFileSync } from 'fs'
-import minimist from 'minimist'
+import { param_r_ } from '@ctx-core/cli-args'
 console.info(cmd_rollup_())
 module.exports = cmd_rollup_
 function cmd_rollup_() {
-	const argv = minimist(process.argv.slice(2), {
-		'--': true,
-		alias: { c: 'config', h: 'help', t: 'target', w: 'watch' }
+	const param_r = param_r_(process.argv.slice(2), {
+		config: '-c, --config',
+		help: '-h, --help',
+		target: '-t, --target',
+		watch: '-w, --watch',
 	})
-	const { help } = argv
+	const help = !!param_r.help
 	if (help) return help_msg_()
-	const suffix = (argv['--'] || []).join(' ')
+	const suffix = (param_r['--'] || []).join(' ')
 	const config_file =
-		argv.config
+		param_r.config?.[0]
 		|| process.env.ROLLUP_JSON
 		|| './rollup.json'
-	const {
-		target = 'browser',
-		watch
-	} = argv
+	const target = param_r.target?.[0]
+	const watch = !!u.watch
 	const config_json = readFileSync(config_file, 'utf8')
 	const config = JSON.parse(config_json)
 	const config_target_cmd_a = config[target] || []

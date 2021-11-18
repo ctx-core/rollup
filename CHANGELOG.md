@@ -1,5 +1,19 @@
 # @ctx-core/rollup
 
+## 13.1.3
+
+### Patch Changes
+
+- @types/fs-extra: ^9.0.12 -> ^9.0.13
+- typescript: ^4.4.4 -> ^4.5.2
+- @swc/core: ^1.2.108 -> ^1.2.110
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@23.0.25
+  - @ctx-core/cli-args@11.0.2
+  - @ctx-core/pipe@6.0.18
+  - @ctx-core/queue@6.1.1
+
 ## 13.1.2
 
 ### Patch Changes

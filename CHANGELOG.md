@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.10
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+- Updated dependencies
+  - @ctx-core/array@23.0.32
+  - @ctx-core/cli-args@11.0.10
+  - @ctx-core/pipe@6.0.24
+  - @ctx-core/queue@6.1.7
+
 ## 13.1.9
 
 ### Patch Changes

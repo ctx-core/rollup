@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.1.12",
+	"version": "13.1.13",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -12,15 +12,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ctx-core/rollup/issues"
+		"url": "https://github.com/ctx-core/rollup.git"
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
 	"exports": {
 		".": {
-			"types": "./src/index.ts",
-			"import": "./dist/index.js"
+			"import": "./dist/index.js",
+			"types": "./src/index.ts"
 		},
 		"./package.json": "./package.json"
 	},
@@ -36,10 +36,10 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.34",
-		"@ctx-core/cli-args": "workspace:^11.0.12",
-		"@ctx-core/pipe": "workspace:^6.0.26",
-		"@ctx-core/queue": "workspace:^6.1.9",
+		"@ctx-core/array": "workspace:^23.0.35",
+		"@ctx-core/cli-args": "workspace:^11.0.13",
+		"@ctx-core/pipe": "workspace:^6.0.27",
+		"@ctx-core/queue": "workspace:^6.1.10",
 		"chokidar": "^3.5.2",
 		"fs-extra": "^10.0.0",
 		"globby": "^12.0.2",

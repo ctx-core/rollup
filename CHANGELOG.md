@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.15
+
+### Patch Changes
+
+- \*.d.ts export
+- Updated dependencies
+  - @ctx-core/array@23.0.37
+  - @ctx-core/cli-args@11.0.15
+  - @ctx-core/pipe@6.0.29
+  - @ctx-core/queue@6.1.12
+
 ## 13.1.14
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.1.14",
+	"version": "13.1.15",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -20,7 +20,7 @@
 	"exports": {
 		".": {
 			"import": "./dist/index.js",
-			"types": "./src/index.ts"
+			"types": "./dist/index.d.ts"
 		},
 		"./package.json": "./package.json"
 	},
@@ -31,15 +31,17 @@
 	"scripts": {
 		"build": "npm run compile",
 		"clean": "rimraf dist",
-		"compile": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
+		"compile": "npm run compile_source && npm run compile_declaration",
+		"compile_source": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
+		"compile_declaration": "tsc src/index.ts --declaration --emitDeclarationOnly --declarationDir dist",
 		"exec": "$@",
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:^23.0.36",
-		"@ctx-core/cli-args": "workspace:^11.0.14",
-		"@ctx-core/pipe": "workspace:^6.0.28",
-		"@ctx-core/queue": "workspace:^6.1.11",
+		"@ctx-core/array": "workspace:^23.0.37",
+		"@ctx-core/cli-args": "workspace:^11.0.15",
+		"@ctx-core/pipe": "workspace:^6.0.29",
+		"@ctx-core/queue": "workspace:^6.1.12",
 		"chokidar": "^3.5.2",
 		"fs-extra": "^10.0.0",
 		"globby": "^12.0.2",

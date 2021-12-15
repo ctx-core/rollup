@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.12
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+- Updated dependencies
+  - @ctx-core/array@23.0.34
+  - @ctx-core/cli-args@11.0.12
+  - @ctx-core/pipe@6.0.26
+  - @ctx-core/queue@6.1.9
+
 ## 13.1.11
 
 ### Patch Changes

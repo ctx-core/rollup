@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.14
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/array@23.0.36
+  - @ctx-core/cli-args@11.0.14
+  - @ctx-core/pipe@6.0.28
+  - @ctx-core/queue@6.1.11
+
 ## 13.1.13
 
 ### Patch Changes

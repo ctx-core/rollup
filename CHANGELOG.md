@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.17
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+- Updated dependencies
+  - @ctx-core/array@23.0.39
+  - @ctx-core/cli-args@11.0.17
+  - @ctx-core/pipe@6.0.31
+  - @ctx-core/queue@6.1.14
+
 ## 13.1.16
 
 ### Patch Changes

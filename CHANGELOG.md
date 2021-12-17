@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.19
+
+### Patch Changes
+
+- fix: error TS6059: \* is not under 'rootDir': package.json: types: ./dist/index.d.ts
+- Updated dependencies
+  - @ctx-core/array@23.0.41
+  - @ctx-core/cli-args@11.0.19
+  - @ctx-core/pipe@6.0.33
+  - @ctx-core/queue@6.1.16
+
 ## 13.1.18
 
 ### Patch Changes

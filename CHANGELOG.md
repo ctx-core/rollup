@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.18
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+- Updated dependencies
+  - @ctx-core/array@23.0.40
+  - @ctx-core/cli-args@11.0.18
+  - @ctx-core/pipe@6.0.32
+  - @ctx-core/queue@6.1.15
+
 ## 13.1.17
 
 ### Patch Changes

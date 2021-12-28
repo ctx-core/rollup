@@ -1,4 +1,4 @@
 #!/bin/sh
-# rollup test js to private/dist
+# rollup test js to private/lib
 eval "$(rollup-cmd.js -t test -- '&')"
 wait

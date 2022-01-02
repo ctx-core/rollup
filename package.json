@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.1.19",
+	"version": "13.1.20",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -31,7 +31,7 @@
 	"scripts": {
 		"build": "npm run compile",
 		"clean": "rimraf lib && npm run clean:tsbuildinfo",
-		"clean:tsbuildinfo": "rm -f tsconfig.tsbuildinfo && rm -f lib/**/*.d.ts",
+		"clean:tsbuildinfo": "rimraf tsconfig.tsbuildinfo && rimraf lib/**/*.d.ts",
 		"compile": "npm run compile:source && npm run compile:declaration",
 		"compile:source": "swc src --out-dir lib --copy-files --source-maps --config-file .swcrc",
 		"compile:declaration": "npm run clean:tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir lib",
@@ -41,8 +41,8 @@
 	"dependencies": {
 		"@ctx-core/array": "workspace:^23.1.0",
 		"@ctx-core/cli-args": "workspace:^11.0.19",
-		"@ctx-core/pipe": "workspace:^6.0.33",
-		"@ctx-core/queue": "workspace:^6.1.16",
+		"@ctx-core/pipe": "workspace:^6.0.34",
+		"@ctx-core/queue": "workspace:^6.1.17",
 		"chokidar": "^3.5.2",
 		"fs-extra": "^10.0.0",
 		"globby": "^12.0.2",

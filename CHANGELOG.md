@@ -1,5 +1,15 @@
 # @ctx-core/rollup
 
+## 13.1.20
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/pipe@6.0.34
+  - @ctx-core/queue@6.1.17
+
 ## 13.1.19
 
 ### Patch Changes

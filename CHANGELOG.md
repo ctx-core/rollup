@@ -1,5 +1,17 @@
 # @ctx-core/rollup
 
+## 13.1.22
+
+### Patch Changes
+
+- @swc/core: ^1.2.125 -> ^1.2.127
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@23.1.3
+  - @ctx-core/cli-args@11.0.22
+  - @ctx-core/queue@6.1.19
+  - @ctx-core/pipe@6.0.36
+
 ## 13.1.21
 
 ### Patch Changes

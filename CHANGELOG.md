@@ -1,5 +1,16 @@
 # @ctx-core/rollup
 
+## 13.1.23
+
+### Patch Changes
+
+- sideEffects = false
+- Updated dependencies
+  - @ctx-core/array@23.1.4
+  - @ctx-core/cli-args@11.0.23
+  - @ctx-core/pipe@6.0.37
+  - @ctx-core/queue@6.1.20
+
 ## 13.1.22
 
 ### Patch Changes

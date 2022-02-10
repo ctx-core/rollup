@@ -39,10 +39,10 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "workspace:*",
-		"@ctx-core/cli-args": "workspace:^11.0.25",
-		"@ctx-core/pipe": "workspace:^6.0.37",
-		"@ctx-core/queue": "workspace:^6.2.0",
+		"@ctx-core/array": "*",
+		"@ctx-core/cli-args": "^11.0.25",
+		"@ctx-core/pipe": "^6.0.37",
+		"@ctx-core/queue": "^6.2.0",
 		"chokidar": "^3.5.3",
 		"fs-extra": "^10.0.0",
 		"globby": "^13.1.1",

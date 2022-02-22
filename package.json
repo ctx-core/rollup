@@ -44,14 +44,14 @@
 		"@ctx-core/pipe": "^6.0.37",
 		"@ctx-core/queue": "^6.2.0",
 		"chokidar": "^3.5.3",
-		"fs-extra": "^10.0.0",
+		"fs-extra": "^10.0.1",
 		"globby": "^13.1.1",
 		"minimist": "^1.2.5",
 		"nodemon": "^2.0.15"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
-		"@swc/core": "^1.2.143",
+		"@swc/core": "^1.2.144",
 		"@types/fs-extra": "^9.0.13",
 		"rimraf": "^3.0.2",
 		"typescript": "next"

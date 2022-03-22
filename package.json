@@ -46,12 +46,12 @@
 		"chokidar": "^3.5.3",
 		"fs-extra": "^10.0.1",
 		"globby": "^13.1.1",
-		"minimist": "^1.2.5",
+		"minimist": "^1.2.6",
 		"nodemon": "^2.0.15"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.56",
-		"@swc/core": "^1.2.159",
+		"@swc/core": "^1.2.160",
 		"@types/fs-extra": "^9.0.13",
 		"rimraf": "^3.0.2",
 		"typescript": "next"

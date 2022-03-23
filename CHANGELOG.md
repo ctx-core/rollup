@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.1.30
+
+### Patch Changes
+
+- update dependencies
+
 ## 13.1.29
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.1.30",
+	"version": "13.1.31",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -40,7 +40,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/array": "*",
-		"@ctx-core/cli-args": "^11.0.26",
+		"@ctx-core/cli-args": "^11.0.27",
 		"@ctx-core/pipe": "^6.0.37",
 		"@ctx-core/queue": "^7.1.0",
 		"chokidar": "^3.5.3",

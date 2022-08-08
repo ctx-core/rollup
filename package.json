@@ -37,8 +37,8 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.7.4",
-		"@ctx-core/cli-args": "^11.0.45",
+		"@ctx-core/array": "^26.7.6",
+		"@ctx-core/cli-args": "^11.0.47",
 		"@ctx-core/pipe": "^6.0.38",
 		"@ctx-core/queue": "^7.3.1",
 		"chokidar": "^3.5.3",

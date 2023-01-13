@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 13.1.67
+
+### Patch Changes
+
+- rimraf: ^3.0.2 -> ^4.0.1
+- Updated dependencies
+  - @ctx-core/pipe@6.0.39
+
 ## 13.1.66
 
 ### Patch Changes

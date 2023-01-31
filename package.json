@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.1.71",
+	"version": "13.1.72",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -37,8 +37,8 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.8.13",
-		"@ctx-core/cli-args": "^11.0.62",
+		"@ctx-core/array": "^26.8.14",
+		"@ctx-core/cli-args": "^11.0.63",
 		"@ctx-core/pipe": "^6.0.41",
 		"@ctx-core/queue": "^7.3.3",
 		"chokidar": "^3.5.3",

@@ -5,6 +5,7 @@
 ### Minor Changes
 
 - extract _.js & _.d.ts into directories
+- + external__pkg_T: aliased by external__pkg_I
 
 ## 13.1.84
 

@@ -1,11 +1,19 @@
 # @ctx-core/rollup
 
+## 13.2.1
+
+### Patch Changes
+
+- @ctx-core/array: ^26.10.1 -> ^26.10.2
+- Updated dependencies
+  - @ctx-core/cli-args@11.1.1
+
 ## 13.2.0
 
 ### Minor Changes
 
 - extract _.js & _.d.ts into directories
-- + external__pkg_T: aliased by external__pkg_I
+- - external**pkg_T: aliased by external**pkg_I
 
 ## 13.1.84
 

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.1.84",
+	"version": "13.2.0",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -17,9 +17,10 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./lib/index.d.ts",
+	"types": "./src/index.d.ts",
+	"svelte": "./src/index.js",
 	"exports": {
-		".": "./lib/index.js",
+		".": "./src/index.js",
 		"./package.json": "./package.json"
 	},
 	"bin": {
@@ -27,14 +28,13 @@
 		"script-ts": "./bin/script-ts.mjs"
 	},
 	"scripts": {
-		"build": "npm run compile",
-		"clean": "rimraf lib && npm run clean:tsbuildinfo",
-		"clean:tsbuildinfo": "rimraf tsconfig.tsbuildinfo && rimraf lib/**/*.d.ts",
-		"compile": "npm run compile:source && npm run compile:declaration",
-		"compile:source": "swc src --out-dir lib --copy-files --source-maps --config-file .swcrc",
-		"compile:declaration": "npm run clean:tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir lib",
+		"build": ":",
+		"clean": ":",
 		"exec": "$@",
-		"prepublishOnly": "npm run clean && npm run build"
+		"prepublishOnly": "npm run clean && npm run build && npm run test",
+		"test": "pnpm test-unit && check-dts",
+		"test-unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
 		"@ctx-core/array": "^26.10.1",
@@ -50,16 +50,15 @@
 		"path-type": "^5.0.0"
 	},
 	"devDependencies": {
-		"@swc/cli": "^0.1.62",
-		"@swc/core": "^1.3.35",
-		"@types/fs-extra": "^11.0.1",
-		"rimraf": "^4.1.2",
-		"typescript": "next"
+		"c8": "^7.13.0",
+		"check-dts": "^0.7.0",
+		"tsx": "^3.12.3",
+		"typescript": "next",
+		"uvu": "^0.5.6"
 	},
 	"publishConfig": {
 		"access": "public",
 		"cache": "~/.npm"
 	},
-	"svelte": "./lib/index.js",
 	"sideEffects": false
 }

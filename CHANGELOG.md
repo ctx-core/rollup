@@ -1,5 +1,12 @@
 # @ctx-core/rollup
 
+## 13.2.6
+
+### Patch Changes
+
+- @ctx-core/array: ^26.11.3 -> ^26.11.4
+- @ctx-core/cli-args: ^11.1.5 -> ^11.1.6
+
 ## 13.2.5
 
 ### Patch Changes

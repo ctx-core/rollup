@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.2.15
+
+### Patch Changes
+
+- dependencies: fix: @ctx-core/env
+
 ## 13.2.14
 
 ### Patch Changes

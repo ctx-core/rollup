@@ -1,10 +1,10 @@
-import { param_r_T } from '@ctx-core/cli-args'
+import { param_R_T } from '@ctx-core/cli-args'
 export declare function cli():Promise<void>
 export interface enueue_fn_params_I {
 	dir:string;
 	parallel:number;
 }
-export interface RollupCliParam extends param_r_T {
+export interface RollupCliParam extends param_R_T {
 	help:string[];
 	dir:string[];
 	build:string[];

@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.2.50
+
+### Patch Changes
+
+- @ctx-core/env: ^17.2.53 -> ^17.2.54
+
 ## 13.2.49
 
 ### Patch Changes

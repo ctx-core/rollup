@@ -37,9 +37,9 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.12.12",
-		"@ctx-core/cli-args": "^11.3.1",
-		"@ctx-core/env": "^17.2.63",
+		"@ctx-core/array": "^26.12.25",
+		"@ctx-core/cli-args": "^11.3.14",
+		"@ctx-core/env": "^17.2.75",
 		"@ctx-core/pipe": "^6.1.0",
 		"@ctx-core/queue": "^7.5.1",
 		"chokidar": "^3.5.3",

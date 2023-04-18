@@ -1,5 +1,29 @@
 # @ctx-core/rollup
 
+## 13.2.79
+
+### Patch Changes
+
+- @ctx-core/git-tools: ^7.0.58 -> ^7.0.59
+- @ctx-core/queue: ^7.5.15 -> ^7.5.16
+- @ctx-core/build: 1.0.296 -> 1.0.297
+- @ctx-core/monorepo: ^20.2.2 -> ^20.2.3
+- @ctx-core/ctx-core-package-tools: ^8.0.188 -> ^8.0.189
+- @ctx-core/dev-tools: 8.1.108 -> 8.1.109
+- @ctx-core/function: ^21.17.13 -> ^21.17.14
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@26.12.28
+  - @ctx-core/cli-args@11.3.17
+  - @ctx-core/env@17.2.79
+  - @ctx-core/pipe@6.1.15
+  - @ctx-core/queue@7.5.17
+
 ## 13.2.78
 
 ### Patch Changes

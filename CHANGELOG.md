@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.2.84
+
+### Patch Changes
+
+- @ctx-core/queue: ^7.5.21 -> ^7.6.0
+
 ## 13.2.83
 
 ### Patch Changes

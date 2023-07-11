@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.2.129",
+	"version": "13.2.130",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -47,7 +47,7 @@
 		"fs-extra": "^11.1.1",
 		"globby": "^13.2.2",
 		"minimist": "^1.2.8",
-		"nodemon": "^3.0.0",
+		"nodemon": "^3.0.1",
 		"path-type": "^5.0.0"
 	},
 	"devDependencies": {

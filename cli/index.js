@@ -1,16 +1,24 @@
+import { param_r_ } from '@ctx-core/cli-args'
+import { piped_a_ } from '@ctx-core/pipe'
 import { exec } from 'child_process'
+import { queue_ } from '@ctx-core/queue'
 import { pathExists } from 'fs-extra'
 import { globby } from 'globby'
 import { dirname } from 'path'
 import { promisify } from 'util'
-import { param_r_ } from '@ctx-core/cli-args'
-import { piped_a_ } from '@ctx-core/pipe'
-import { queue_ } from '@ctx-core/queue'
 const exec_async = promisify(exec)
 /** @type {string[]} */
 let piped_a
 export async function cli() {
-	const { help, dir: dir_param_val_a, build: build_param_val_a, compile: compile_param_val_a, clean: clean_param_val_a, parallel: parallel_param_val_a, watch: watch_param_val_a } = param_r_(process.argv.slice(2), {
+	const {
+		help,
+		dir: dir_param_val_a,
+		build: build_param_val_a,
+		compile: compile_param_val_a,
+		clean: clean_param_val_a,
+		parallel: parallel_param_val_a,
+		watch: watch_param_val_a
+	} = param_r_(process.argv.slice(2), {
 		help: '-h, --help',
 		dir: '-d, --dir',
 		build: '-b, --build',

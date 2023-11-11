@@ -36,8 +36,8 @@ function cmd_rollup_() {
 	const { length } = config_target_cmd_a
 	const code =
 		watch
-		? watch_code_()
-		: cmds_code_()
+			? watch_code_()
+			: cmds_code_()
 	return code
 	function cmds_code_() {
 		const cmds = []

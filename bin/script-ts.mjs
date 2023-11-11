@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { stat } from 'fs/promises'
 import { dirname } from 'path'
-import { cli } from '../lib/index.js'
+import { cli } from '../index.js'
 await cli({ package_json_path_, })
 async function package_json_path_(path) {
 	const dirname_path = dirname(path)

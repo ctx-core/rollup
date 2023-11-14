@@ -1,5 +1,17 @@
 # @ctx-core/rollup
 
+## 13.3.2
+
+### Patch Changes
+
+- fix: missing tsconfig.json
+- Updated dependencies
+  - @ctx-core/array@27.0.2
+  - @ctx-core/cli-args@11.4.2
+  - @ctx-core/env@17.4.2
+  - @ctx-core/pipe@6.2.2
+  - @ctx-core/queue@7.10.2
+
 ## 13.3.1
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @ctx-core/rollup
 
+## 13.3.29
+
+### Patch Changes
+
+- tsx: ^4.4.0 -> ^4.5.0
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@27.0.26
+  - @ctx-core/cli-args@11.4.26
+  - @ctx-core/env@17.4.29
+  - @ctx-core/pipe@6.2.8
+  - @ctx-core/queue@7.10.26
+
 ## 13.3.28
 
 ### Patch Changes

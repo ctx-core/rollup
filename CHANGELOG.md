@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.3.36
+
+### Patch Changes
+
+- fs-extra: ^11.1.1 -> ^11.2.0
+
 ## 13.3.35
 
 ### Patch Changes

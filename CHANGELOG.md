@@ -1,5 +1,18 @@
 # @ctx-core/rollup
 
+## 13.3.44
+
+### Patch Changes
+
+- @ctx-core/queue: ^7.10.37 -> ^7.10.38
+- @ctx-core/array: ^27.0.37 -> ^27.0.38
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/cli-args@11.4.38
+  - @ctx-core/env@17.4.42
+
 ## 13.3.43
 
 ### Patch Changes

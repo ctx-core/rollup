@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.3.49",
+	"version": "13.3.50",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -44,11 +44,11 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^27.1.4",
-		"@ctx-core/cli-args": "^11.4.43",
-		"@ctx-core/env": "^17.4.47",
+		"@ctx-core/array": "^27.1.5",
+		"@ctx-core/cli-args": "^11.4.44",
+		"@ctx-core/env": "^17.4.48",
 		"@ctx-core/pipe": "^6.2.8",
-		"@ctx-core/queue": "^7.10.43",
+		"@ctx-core/queue": "^7.10.44",
 		"chokidar": "^3.5.3",
 		"dir-glob": "^3.0.1",
 		"fs-extra": "^11.2.0",

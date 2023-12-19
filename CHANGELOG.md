@@ -1,5 +1,15 @@
 # @ctx-core/rollup
 
+## 13.3.63
+
+### Patch Changes
+
+- consolidate dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@5.1.0
+  - @ctx-core/cli-args@11.4.56
+
 ## 13.3.62
 
 ### Patch Changes

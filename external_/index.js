@@ -1,4 +1,4 @@
-import { reject } from '@ctx-core/array'
+import { reject } from 'ctx-core/array'
 import { builtinModules } from 'module'
 export function external_(pkg) {
 	return reject(

@@ -1,4 +1,4 @@
-import { param_r_T } from '@ctx-core/cli-args'
+import type { param_r_T } from 'ctx-core/cli-args'
 export declare function cli():Promise<void>
 export interface enueue_fn_params_I {
 	dir:string;

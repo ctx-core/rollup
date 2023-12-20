@@ -1,6 +1,6 @@
-import { param_r_ } from '@ctx-core/cli-args'
 import { exec } from 'child_process'
-import { piped_a_ } from 'ctx-core/pipe'
+import { piped_a_ } from '@ctx-core/pipe'
+import { param_r_ } from 'ctx-core/cli-args'
 import { queue_ } from 'ctx-core/queue'
 import { pathExists } from 'fs-extra'
 import { globby } from 'globby'

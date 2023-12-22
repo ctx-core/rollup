@@ -76,14 +76,12 @@ async function enqueue(fn, { dir, parallel }) {
 		const queue = queue_(parallel)
 		return Promise.all(package_json_path_a.map((package_json_path)=>queue.add(async ()=>{
 			const ret = await fn(package_json_path)
-			console.debug(package_json_path)
 			return ret
 		})))
 	} else {
 		const out_a = []
 		for (let i = 0; i < package_json_path_a.length; i++) {
 			const package_json_path = package_json_path_a[i]
-			console.debug(package_json_path)
 			out_a.push(await fn(package_json_path))
 		}
 		return out_a

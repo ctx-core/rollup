@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 13.3.71
+
+### Patch Changes
+
+- cli: - console.debug
+- Updated dependencies
+  - ctx-core@5.4.0
+
 ## 13.3.70
 
 ### Patch Changes

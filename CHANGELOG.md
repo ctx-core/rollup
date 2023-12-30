@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 13.3.74
+
+### Patch Changes
+
+- ctx-core: ^5.5.0 -> ^5.6.0
+- Updated dependencies
+  - ctx-core@5.6.1
+
 ## 13.3.73
 
 ### Patch Changes

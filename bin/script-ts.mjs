@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { stat } from 'fs/promises'
-import { dirname } from 'path'
+import { stat } from 'node:fs/promises'
+import { dirname } from 'node:path'
 import { cli } from '../index.js'
 await cli({ package_json_path_, })
 async function package_json_path_(path) {

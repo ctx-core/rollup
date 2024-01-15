@@ -1,5 +1,13 @@
 # @ctx-core/rollup
 
+## 13.3.96
+
+### Patch Changes
+
+- import nodejs core modules using node: prefix
+- Updated dependencies
+  - ctx-core@5.18.8
+
 ## 13.3.95
 
 ### Patch Changes

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { param_r_ } from 'ctx-core/cli-args'
 import { import_meta_env_ } from 'ctx-core/env'
-import { readFileSync } from 'fs'
+import { readFileSync } from 'node:fs'
 /**
  * list project rollup entries {file,script} based on ./rollup.json
  * @module @ctx-core/rollup/rollup-cmd

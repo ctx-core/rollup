@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.3.138
+
+### Patch Changes
+
+- chokidar: ^3.5.3 -> ^3.6.0
+
 ## 13.3.137
 
 ### Patch Changes

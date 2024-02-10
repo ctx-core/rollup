@@ -1,5 +1,14 @@
 # @ctx-core/rollup
 
+## 13.3.143
+
+### Patch Changes
+
+- tsx: ^4.7.0 -> ^4.7.1
+- Updated dependencies
+  - ctx-core@6.1.2
+  - @ctx-core/pipe@6.2.10
+
 ## 13.3.142
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.3.156
+
+### Patch Changes
+
+- ctx-core: ^6.5.0 -> ^6.5.1
+
 ## 13.3.155
 
 ### Patch Changes

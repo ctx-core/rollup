@@ -1,5 +1,14 @@
 # @ctx-core/rollup
 
+## 13.3.167
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+  - @ctx-core/pipe@6.2.11
+
 ## 13.3.166
 
 ### Patch Changes

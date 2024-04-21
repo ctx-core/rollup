@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.3.186",
+	"version": "13.3.187",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -50,7 +50,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/pipe": "^6.2.11",
-		"ctx-core": "^7.2.1",
+		"ctx-core": "^7.2.2",
 		"chokidar": "^3.6.0",
 		"dir-glob": "^3.0.1",
 		"fs-extra": "^11.2.0",

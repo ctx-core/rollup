@@ -1,5 +1,11 @@
 # @ctx-core/rollup
 
+## 13.3.198
+
+### Patch Changes
+
+- nodemon: ^3.1.1 -> ^3.1.2
+
 ## 13.3.197
 
 ### Patch Changes

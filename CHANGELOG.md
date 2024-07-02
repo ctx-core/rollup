@@ -1,5 +1,14 @@
 # @ctx-core/rollup
 
+## 13.3.213
+
+### Patch Changes
+
+- globby: ^14.0.1 -> ^14.0.2
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@7.2.26
+
 ## 13.3.212
 
 ### Patch Changes

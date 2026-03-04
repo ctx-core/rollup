@@ -1,5 +1,31 @@
 # @ctx-core/rollup
 
+## 13.3.220
+
+### Patch Changes
+
+- c8: ^10.1.3 -> ^11.0.0
+- fs-extra: ^11.3.2 -> ^11.3.3
+- globby: ^14.1.0 -> ^16.1.1
+- check-dts: ^0.8.2 -> ^0.9.0
+- tsx: ^4.20.6 -> ^4.21.0
+- fs-extra: ^11.3.3 -> ^11.3.4
+- nodemon: ^3.1.10 -> ^3.1.14
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@7.2.33
+  - @ctx-core/pipe@6.2.12
+
 ## 13.3.219
 
 ### Patch Changes

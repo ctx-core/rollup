@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/rollup",
-	"version": "13.3.220",
+	"version": "13.3.221",
 	"description": "ctx-core rollup",
 	"keywords": [
 		"ctx-core",
@@ -49,7 +49,7 @@
 		"disable:test:unit:coverage": "c8 bun run test:unit"
 	},
 	"dependencies": {
-		"@ctx-core/pipe": "^6.2.12",
+		"@ctx-core/pipe": "^6.2.13",
 		"chokidar": "^5.0.0",
 		"ctx-core": "*",
 		"dir-glob": "^3.0.1",

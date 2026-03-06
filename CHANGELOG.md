@@ -1,5 +1,14 @@
 # @ctx-core/rollup
 
+## 13.3.221
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+  - @ctx-core/pipe@6.2.13
+
 ## 13.3.220
 
 ### Patch Changes
